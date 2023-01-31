@@ -7,7 +7,16 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-
+      path: '',
+      redirect: '/login'
+    },
+    {
+      path: '/login',
+      component: () => import("../view/Login.vue")
+    },
+    {
+      path: '/diary',
+      component: () => import("../view/Diary.vue")
     }
   ]
 })
