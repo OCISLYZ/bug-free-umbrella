@@ -5,11 +5,13 @@ import store from './store/index.js'
 
 //全局css
 import './assets/css/base.css'
+import 'remixicon/fonts/remixicon.css'
 
 //按需导入elementUI和导入UI样式
 import element from './config/elememtConfig'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(element)
+
 
 Vue.config.productionTip = false
 

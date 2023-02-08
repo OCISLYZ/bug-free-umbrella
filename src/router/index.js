@@ -12,7 +12,10 @@ export default new Router({
     },
     {
       path: '/login',
-      component: () => import("../view/Login.vue")
+      component: () => import("../view/Login.vue"),
+      meta: {
+        hideNavbar: true
+      }
     },
     {
       path: '/diary',
