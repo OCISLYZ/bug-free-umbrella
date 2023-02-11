@@ -8,7 +8,7 @@ export default new Router({
   routes: [
     {
       path: '',
-      redirect: '/login'
+      redirect: '/bill'
     },
     {
       path: '/login',
@@ -20,6 +20,10 @@ export default new Router({
     {
       path: '/diary',
       component: () => import("../view/Diary.vue")
+    },
+    {
+      path: '/bill',
+      component: () => import("../view/Bill.vue")
     }
   ]
 })
